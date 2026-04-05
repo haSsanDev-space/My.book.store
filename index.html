@@ -1,57 +1,122 @@
-‏<!DOCTYPE html>
-‏<html lang="en">
-‏<head>
-‏    <meta charset="UTF-8">
-‏    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-‏    <title>My First Book Store</title>
-    
-‏    <style>
-‏        body { 
-‏            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-‏            background-color: #f8f9fa; 
-‏            text-align: center; 
-‏            padding: 50px; 
-‏            color: #333;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hassan's Golden Bookstore</title>
+    <style>
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #1a1a1a; /* Black background */
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
         }
-‏        .container { 
-‏            background: white; 
-‏            padding: 30px; 
-‏            border-radius: 20px; 
-‏            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
-‏            display: inline-block; 
-‏            max-width: 400px;
-        }
-‏        h1 { color: #2c3e50; margin-bottom: 10px; }
-‏        p { color: #7f8c8d; font-size: 18px; }
-‏        .btn { 
-‏            background-color: #3498db; 
-‏            color: white; 
-‏            border: none; 
-‏            padding: 12px 25px; 
-‏            border-radius: 30px; 
-‏            cursor: pointer; 
-‏            font-size: 16px; 
-‏            transition: 0.3s;
-‏            margin-top: 20px;
-        }
-‏        .btn:hover { background-color: #2980b9; transform: scale(1.05); }
-‏    </style>
-‏</head>
-‏<body>
 
-‏    <div class="container">
-‏        <h1>Welcome to My Book Store 📚</h1>
-‏        <p>This is my first project hosted on GitHub.</p>
-‏        <p>Learning Web Development is exciting!</p>
-        
-‏        <button class="btn" onclick="sayHello()">Click Me!</button>
-‏    </div>
-
-‏    <script>
-‏        function sayHello() {
-‏            alert('Hello World! My website is live 🚀');
+        header {
+            text-align: center;
+            padding: 50px 0;
+            border-bottom: 2px solid #d4af37; /* Gold line */
+            margin-bottom: 40px;
         }
-‏    </script>
 
-‏</body>
-‏</html>
+        h1 {
+            color: #d4af37; /* Metallic Gold */
+            font-size: 35px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .book-card {
+            background: #262626;
+            padding: 15px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            text-align: center;
+            transition: all 0.4s ease;
+        }
+
+        .book-card:hover {
+            border-color: #d4af37;
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.1);
+        }
+
+        .book-card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 5px;
+            filter: grayscale(20%);
+        }
+
+        .book-card h3 {
+            color: #d4af37;
+            margin: 15px 0 5px;
+        }
+
+        .price {
+            display: block;
+            font-size: 20px;
+            margin-bottom: 15px;
+            color: #bdc3c7;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #1a1a1a;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 2px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: 0.3s;
+        }
+
+        .buy-btn:hover {
+            background-color: #f1c40f;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hassan's Golden Bookstore</h1>
+        <p>Excellence in every page</p>
+    </header>
+
+    <div class="container">
+        <div class="book-card">
+            <img src="https://images.unsplash.com/photo-1543003968-a393be56a5ed?q=80&w=400" alt="Book">
+            <h3>Luxury of Reading</h3>
+            <span class="price">$49.99</span>
+            <a href="#" class="buy-btn">Add to Cart</a>
+        </div>
+
+        <div class="book-card">
+            <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=400" alt="Book">
+            <h3>Golden Wisdom</h3>
+            <span class="price">$35.00</span>
+            <a href="#" class="buy-btn">Add to Cart</a>
+        </div>
+
+        <div class="book-card">
+            <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?q=80&w=400" alt="Book">
+            <h3>The Royal Library</h3>
+            <span class="price">$55.00</span>
+            <a href="#" class="buy-btn">Add to Cart</a>
+        </div>
+    </div>
+
+</body>
+</html>
