@@ -6,98 +6,76 @@
     <title>Hassan's Golden Bookstore</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', sans-serif;
             background-color: #1a1a1a;
-            color: #ffffff;
+            color: white;
             margin: 0;
             padding: 20px;
-            line-height: 1.6;
         }
 
         header {
             text-align: center;
-            padding: 60px 0;
+            padding: 50px 0;
             border-bottom: 2px solid #d4af37;
             margin-bottom: 40px;
         }
 
         h1 {
             color: #d4af37;
-            font-size: 3rem;
             text-transform: uppercase;
-            letter-spacing: 3px;
-            margin: 0;
-        }
-
-        header p {
-            color: #bdc3c7;
-            font-style: italic;
-            margin-top: 10px;
+            letter-spacing: 2px;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 30px;
-            padding: 20px 0;
         }
 
         .book-card {
             background: #262626;
-            padding: 20px;
-            border-radius: 12px;
+            padding: 15px;
+            border-radius: 10px;
             border: 1px solid #333;
             text-align: center;
-            transition: transform 0.3s ease, border-color 0.3s ease;
+            transition: 0.3s;
         }
 
         .book-card:hover {
-            transform: translateY(-10px);
             border-color: #d4af37;
+            transform: translateY(-5px);
         }
 
         .book-card img {
             width: 100%;
-            height: 400px;
+            height: 350px;
             object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 15px;
-        }
-
-        .book-card h3 {
-            color: #d4af37;
-            margin: 10px 0;
+            border-radius: 5px;
         }
 
         .price {
             display: block;
+            margin: 10px 0;
             font-size: 1.2rem;
-            color: #ecf0f1;
-            margin-bottom: 20px;
         }
 
         .buy-btn {
             display: inline-block;
             background-color: #d4af37;
             color: #1a1a1a;
-            padding: 12px 30px;
+            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 4px;
             font-weight: bold;
-            text-transform: uppercase;
-            transition: background 0.3s ease;
+            border-radius: 5px;
         }
 
-        .buy-btn:hover {
-            background-color: #f1c40f;
-        }
-
+        /* Contact Section Styles */
         .contact-section {
-            max-width: 700px;
-            margin: 80px auto;
-            padding: 40px;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
             background: #262626;
             border: 1px solid #d4af37;
             border-radius: 15px;
@@ -107,39 +85,40 @@
         .contact-section h2 {
             color: #d4af37;
             text-transform: uppercase;
-            margin-bottom: 30px;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
         }
 
         .contact-section input, 
         .contact-section textarea {
-            width: 95%;
-            padding: 15px;
-            margin: 12px 0;
+            width: 90%;
+            padding: 12px;
+            margin: 10px 0;
             background: #1a1a1a;
             border: 1px solid #444;
             color: #ffffff;
-            border-radius: 6px;
-            font-size: 1rem;
+            border-radius: 5px;
+            font-family: inherit;
         }
 
         .contact-section input:focus, 
         .contact-section textarea:focus {
             border-color: #d4af37;
             outline: none;
-            box-shadow: 0 0 8px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
         }
 
         .send-btn {
             background-color: #d4af37;
             color: #1a1a1a;
-            padding: 15px 50px;
+            padding: 15px 40px;
             border: none;
-            border-radius: 4px;
+            border-radius: 5px;
             font-weight: bold;
             text-transform: uppercase;
             cursor: pointer;
-            transition: all 0.3s ease;
-            margin-top: 20px;
+            transition: 0.3s ease;
+            margin-top: 15px;
         }
 
         .send-btn:hover {
@@ -183,7 +162,7 @@
         <form>
             <input type="text" placeholder="Full Name" required>
             <input type="email" placeholder="Email Address" required>
-            <textarea rows="5" placeholder="Your Message"></textarea>
+            <textarea rows="4" placeholder="How can we help you?"></textarea>
             <button type="submit" class="send-btn">Send Message</button>
         </form>
     </section>
